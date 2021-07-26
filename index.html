@@ -9,11 +9,12 @@
     <script src="https://kit.fontawesome.com/d8ec4eda3b.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="">
@@ -42,9 +43,9 @@
             </div>
           </nav>
           <!-- image-slider -->
-        <section class="container my-5">
+        <section class="container my-5 carousel panda-info-bg">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner rounded p-5" style="background: #FEEAE9;">
+                <div class="carousel-inner rounded p-5">
                   <div class="carousel-item active">
                     <div class="row d-flex align-items-center">
                       <div class="col-lg-7">
@@ -52,7 +53,7 @@
                   <p class="fw-normal fs-5">This is the best headphone in the world for people who just want to waste time in front of funky world.
                   </p>
                   <h1>$420</h1>
-                  <button class="btn btn-warning">
+                  <button class="btn-btn-carousel">
                     Buy Now
                   </button>
                       </div>
@@ -68,7 +69,7 @@
                         <p class="fw-normal fs-5">This is the best tv in the world for people who just want to waste time in front of tv.
                         </p>
                         <h1>$1200</h1>
-                        <button class="btn btn-warning">Buy Now
+                        <button class="btn-btn-carousel">Buy Now
                         </button>
                       </div>
                       <div class="col-lg-5">
@@ -83,9 +84,8 @@
                         <p class="fw-normal fs-5">This is the best x-box in the world for people who just want to waste time in front of fake sports.
                         </p>
                         <h1>$600</h1>
-                        <div class="btn btn-warning">
-                          Buy Now
-                        </div>
+                        <button class="btn-btn-carousel">Buy Now
+                        </button>
                       </div>
                       <div class="col-lg-5">
                         <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -110,25 +110,25 @@
         <h1 class="fw-bolder fs-2 my-4">Categories</h1>
         <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
           <div class="col">
-            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around watch-bg">
               <h1 class="text-white fw-normal fs-3">Watch</h1>
               <img width="100" src="images/categories/watch.png" alt="">
             </div>
           </div>
           <div class="col">
-            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around shoes-bg">
               <h1 class="text-white fw-normal fs-3">shoes</h1>
               <img width="100" src="images/categories/shoes.png" alt="">
             </div>
           </div>
           <div class="col">
-            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around bag-bg">
               <h1 class="text-white fw-normal fs-3">Bag</h1>
               <img width="100" src="images/categories/bag.png" alt="">
             </div>
           </div>
           <div class="col">
-            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(170.41deg, #42ffc0 -10.89%, #07805b 92.77%);">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around makeup-bg">
               <h1 class="text-white fw-normal fs-3">Makeup Box</h1>
               <img width="100" src="images/categories/makeup.png" alt="">
             </div>
@@ -151,7 +151,7 @@
                 </div>
                 <div>
                   <h5>$120</h5>
-                    <button class="btn btn-dark">
+                    <button class="btn-buy-now">
                       BUY NOW   <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -166,7 +166,7 @@
                 </div>
                 <div>
                   <h5>$280</h5>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW  <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -181,7 +181,7 @@
                 </div>
                 <div>
                   <h5>$340</h5>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW  <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -196,7 +196,7 @@
                 </div>
                 <div>
                   <h5>$420</h5>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW   <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -222,7 +222,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div>
-                    <button class="btn btn-dark">
+                    <button class="btn-buy-now">
                       BUY NOW   <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -237,7 +237,7 @@
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW  <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -252,7 +252,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW  <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -267,7 +267,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW   <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -293,7 +293,7 @@
                   <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!</p>
                 </div>
                 <div>
-                    <button class="btn btn-dark">
+                    <button class="btn-buy-now">
                       BUY NOW   <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -308,7 +308,7 @@
                   <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!.</p>
                 </div>
                 <div>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW  <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -323,7 +323,7 @@
                   <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!.</p>
                 </div>
                 <div>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW  <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -338,7 +338,7 @@
                   <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!.</p>
                 </div>
                 <div>
-                  <button class="btn btn-dark">
+                  <button class="btn-buy-now">
                     BUY NOW   <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
@@ -349,14 +349,13 @@
       </section>
     </main>
     <!-- Subscribe section -->
-    <section id="subscribe" class="container my-5 d-flex justify-content-center align-items-center rounded-3" style="height: 250px; background: #FEEAE9;">
+    <section id="subscribe" class="container my-5 d-flex justify-content-center align-items-center rounded-3 subscribe-info-bg">
       <div>
         <h1 class="fw-bold fs-3">LET'S STAY IN TOUCH</h1>
       <p class="fw-bolder fs-6">Get updates on sales, specials and more</p>
-      <input type="text" placeholder="Your Email" required>
+      <input class="form-control" type="text" placeholder="Your Email" required>
       <br>
-      <br>
-      <button class="btn btn-success">SUBMIT</button>
+      <button class="btn-btn-submit">SUBMIT</button>
       </div>
     </section>
     <!-- Footer -->

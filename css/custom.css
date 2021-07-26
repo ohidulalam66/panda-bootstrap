@@ -1,0 +1,42 @@
+.carousel {
+    margin-top: 120px;
+}
+.panda-info-bg {
+    background: #fceae8;
+}
+.btn-btn-carousel {
+    color: white;
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 8px;
+}
+.watch-bg {
+    background: #ffa500;
+}
+.shoes-bg {
+    background: #0000ff;
+}
+.bag-bg {
+    background: #da70d6;
+}
+.makeup-bg {
+    background: #0185a3;
+}
+.btn-buy-now {
+    background: #f8c924;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 8px;
+}
+.subscribe-info-bg {
+    height: 250px;
+    background: #fceae8;
+}
+.btn-btn-submit {
+    color: white;
+    background: #198754;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 10px;
+}
