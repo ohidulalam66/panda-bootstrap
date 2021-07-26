@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PANDA</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d8ec4eda3b.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -25,13 +27,16 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#watch">Watch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                 </div>
             </div>
@@ -39,7 +44,7 @@
           <!-- image-slider -->
         <section class="container my-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner bg-secondary bg-gradient rounded p-5">
+                <div class="carousel-inner rounded p-5" style="background: #FEEAE9;">
                   <div class="carousel-item active">
                     <div class="row d-flex align-items-center">
                       <div class="col-lg-7">
@@ -103,33 +108,261 @@
       <!-- Categories -->
       <section class="container my-5">
         <h1 class="fw-bolder fs-2 my-4">Categories</h1>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="p-2 bg-primary rounded-3 d-flex align-items-center justify-content-around">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+          <div class="col">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);">
               <h1 class="text-white fw-normal fs-3">Watch</h1>
               <img width="100" src="images/categories/watch.png" alt="">
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="p-2 bg-warning rounded-3 d-flex align-items-center justify-content-around">
+          <div class="col">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);">
               <h1 class="text-white fw-normal fs-3">shoes</h1>
               <img width="100" src="images/categories/shoes.png" alt="">
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="p-2 bg-success rounded-3 d-flex align-items-center justify-content-around">
+          <div class="col">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);">
               <h1 class="text-white fw-normal fs-3">Bag</h1>
               <img width="100" src="images/categories/bag.png" alt="">
             </div>
-        </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="p-2 bg-danger rounded-3 d-flex align-items-center justify-content-around">
+          </div>
+          <div class="col">
+            <div class="p-2 border rounded-3 d-flex align-items-center justify-content-around" style="background: linear-gradient(170.41deg, #42ffc0 -10.89%, #07805b 92.77%);">
               <h1 class="text-white fw-normal fs-3">Makeup Box</h1>
               <img width="100" src="images/categories/makeup.png" alt="">
             </div>
         </div>
       </section>
+      <!-- Shoes section -->
+      <section id="shoes" class="container my-5">
+        <article class="d-flex d-flex align-items-center justify-content-between">
+          <h1 class="fw-bolder fs-2">Shoes</h1>
+          <a href="#" class="fw-light fs-6 text-decoration-none">See all</a>
+        </article>
+        <div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                </div>
+                <div>
+                  <h5>$120</h5>
+                    <button class="btn btn-dark">
+                      BUY NOW   <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reebok Pump</h5>
+                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                </div>
+                <div>
+                  <h5>$280</h5>
+                  <button class="btn btn-dark">
+                    BUY NOW  <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reebok All Terrain</h5>
+                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                </div>
+                <div>
+                  <h5>$340</h5>
+                  <button class="btn btn-dark">
+                    BUY NOW  <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/shoes/shoe-4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reebok catch</h5>
+                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                </div>
+                <div>
+                  <h5>$420</h5>
+                  <button class="btn btn-dark">
+                    BUY NOW   <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Bags section -->
+      <section id="backpack" class="container my-5">
+        <article class="d-flex d-flex align-items-center justify-content-between">
+          <h1 class="fw-bolder fs-2">Backpack</h1>
+          <a href="#" class="fw-light fs-6 text-decoration-none">See all</a>
+        </article>
+        <div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Red Laltu Bag</h5>
+                  <h5>$120</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div>
+                    <button class="btn btn-dark">
+                      BUY NOW   <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Blue Niltu Bag</h5>
+                  <h5>$280</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div>
+                  <button class="btn btn-dark">
+                    BUY NOW  <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Black Kaltu Bag</h5>
+                  <h5>$340</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div>
+                  <button class="btn btn-dark">
+                    BUY NOW  <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/bags/bag-4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tree plum style Bag</h5>
+                  <h5>$420</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div>
+                  <button class="btn btn-dark">
+                    BUY NOW   <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Watch section -->
+      <section id="watch" class="container my-5">
+        <article class="d-flex d-flex align-items-center justify-content-between">
+          <h1 class="fw-bolder fs-2">Watch</h1>
+          <a href="#" class="fw-light fs-6 text-decoration-none">See all</a>
+        </article>
+        <div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/watch/watch-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Evoke Blue Dial Mesh Strap Watch</h5>
+                  <h5>$720</h5>
+                  <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!</p>
+                </div>
+                <div>
+                    <button class="btn btn-dark">
+                      BUY NOW   <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/watch/watch-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Evoke White Dial Brown Leather Strap Watch</h5>
+                  <h5>$350</h5>
+                  <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!.</p>
+                </div>
+                <div>
+                  <button class="btn btn-dark">
+                    BUY NOW  <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/watch/watch-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Edge Watch with Grey dial in steel case and mesh strap</h5>
+                  <h5>$650</h5>
+                  <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!.</p>
+                </div>
+                <div>
+                  <button class="btn btn-dark">
+                    BUY NOW  <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow p-3 rounded h-100">
+                <img src="images/watch/watch-4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Grandmaster From Titan</h5>
+                  <h5>$467</h5>
+                  <p class="card-text">For the man secure in his masculinity - The sleek silver mesh strap further adds to its intrigue and gives it a debonair flair!.</p>
+                </div>
+                <div>
+                  <button class="btn btn-dark">
+                    BUY NOW   <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Subscribe section -->
+    <section id="subscribe" class="container my-5 d-flex justify-content-center align-items-center rounded-3" style="height: 250px; background: #FEEAE9;">
+      <div>
+        <h1 class="fw-bold fs-3">LET'S STAY IN TOUCH</h1>
+      <p class="fw-bolder fs-6">Get updates on sales, specials and more</p>
+      <input type="text" placeholder="Your Email" required>
+      <br>
+      <br>
+      <button class="btn btn-success">SUBMIT</button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center">
+      <P><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></P>
+    </footer>
 
 
     <!-- Bootstrap script -->
